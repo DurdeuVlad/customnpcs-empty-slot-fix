@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "supported_formats": { "min_inclusive": 41, "max_inclusive": 80 },
+    "description": "Fixes CustomNPCs-Unofficial NeoForge 1.21.1 console spam: 'Tried to load invalid item: No key id in MapLike[{}]' caused by bare-empty ArmorItems slots on customnpcs:customnpc entities."
+  }
+}
