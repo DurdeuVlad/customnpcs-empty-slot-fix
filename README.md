@@ -84,3 +84,17 @@ same bug; not yet individually sampled.)
 - `TESTING.md` — the Intrusive / Non-Intrusive mode policy for touching the
   live staging server, and the handshake-based wake procedure used
   throughout this investigation.
+
+## Releases
+
+Versioning, `CHANGELOG.md`, and GitHub Releases are automated by
+[release-please](https://github.com/googleapis/release-please) (see
+`.github/workflows/release-please.yml`) — it reads commit messages on
+`main`, not a hand-maintained changelog file. Use
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+(`fix:`, `feat:`, `feat!:`/`BREAKING CHANGE:`, `chore:`, `docs:`, ...) so it
+can categorize entries and compute the correct semver bump automatically.
+release-please maintains an open "Release PR" that accumulates
+`CHANGELOG.md` entries as commits land on `main`; merging that PR is what
+actually cuts the version bump, the git tag, and the GitHub Release. Nothing
+to run by hand.
